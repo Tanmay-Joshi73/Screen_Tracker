@@ -1,5 +1,5 @@
 import mongoose from 'mongoose'
-import Tracker from "../mode.js";
+import Tracker from '../Model/mode.js'
 const CheckToday=async(Today,Data)=>{
     try{
       

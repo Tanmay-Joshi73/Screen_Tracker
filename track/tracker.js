@@ -1,7 +1,6 @@
 import activewin from "active-win";
-import Tracker from "./db.js";
 import CheckToday from "./Controller/Process.js";
-import  connectToDB from "./db.js";
+import  connectToDB from "./config/db.js";
 let currentApp=undefined;
 let Time=0;
 let Dt=new Date()
