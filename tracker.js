@@ -11,11 +11,14 @@ console.log("Current Date is ",Today)
 connectToDB()
 setInterval(async()=>{
 let app=await activewin()
+const now=Date.now()
 if(currentApp!=app.owner.name){
 currentApp=app.owner.name
+let timeSpent=Math.floor((now-Time)/1000)
+Time=now;
 let Data={
     App:currentApp,
-    time:Time,
+    time:timeSpent,
     MemoryUsage:app.memoryUsage    
 }
 CheckToday(Today,Data)

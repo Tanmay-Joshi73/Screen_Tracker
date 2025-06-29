@@ -2,7 +2,7 @@ import mongoose from 'mongoose';
 
 const trackerSchema = new mongoose.Schema({
   Day: {
-    type: Date,
+    type: String,
     required: true,
     unique: true
   },
@@ -22,4 +22,5 @@ const trackerSchema = new mongoose.Schema({
   }
 });
 
-export const Tracker = mongoose.model('Tracker', trackerSchema);
+const Tracker = mongoose.model('Tracker', trackerSchema);
+export default Tracker;
