@@ -43,7 +43,5 @@ const CheckToday=async(Today,Data)=>{
         console.error("Error checking today's record:", err);
     }
 }
-export const UpdateData=async(Today,Data)=>{
 
-}
 export default CheckToday;
